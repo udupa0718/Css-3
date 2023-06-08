@@ -1,0 +1,76 @@
+/* P1.HTML CODE */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+ /* color: #fff; */
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #000;
+}
+.animation1{
+    background: palevioletred;
+    /*animation: Sujan;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;*/
+    animation: Sujan 5s infinite;
+}
+@keyframes Sujan{
+    from{background: green;}
+    to{background: #0575e5;}
+}
+/* P2.HTML CODE */
+.animation2{
+   /* background: url(../images/img11.jpg) no-repeat center;*/
+   background-size: 100%;
+   animation: animation_image 5s infinite;
+}
+@keyframes animation_image{
+    from{background: url(../images/img11.jpg) no-repeat top;color:red;}
+    to{background: url(../images/img22.jpg) no-repeat bottom;color: aqua;}
+}
+/* P3.HTML CODE */
+.animation3{
+       background: #fc466B;
+       padding: 20px;
+       margin: 30px;
+       border-radius: 5px;
+       color: #fff;
+       position: absolute;
+       animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3{
+    0%{
+        top: 0px;
+        left: 0px;
+        background: #fc466B;
+        color: #000;
+    }
+    25%{ 
+        top: 0px;
+        left: 600px;
+        background: cadetblue;
+        color: violet;
+    }
+    50%{
+            top: 400px;
+            left: 600px;
+            background: chartreuse;
+            color: brown;
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background: yellow;
+        color: blue;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background: blueviolet;
+        color: darkgrey;
+    }
+}
